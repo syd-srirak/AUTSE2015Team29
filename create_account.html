@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Register a SERLER Account</title>
+</head>
+<body>
+<form action="create_account.php" method="post">
+<div><label for="user_name">Username:
+	<input type="text" name="user_name" id="user_name" maxlength="25" required/></label></div>
+<div><label for="user_password">Password:
+	<input type="password" name="user_password" id="user_password" maxlength="15" required/></label></div>
+<div><label for="user_email">Email:
+	<input type="text" name="user_email" id="user_email" maxlength="50" required/></label></div>
+<div>
+	<input type="hidden" name="is_mod" value="0"/>
+	<input type="checkbox" name="is_mod" value="1"> Moderator?<br>
+	<input type="hidden" name="is_admin" value="0"/>
+	<input type="checkbox" name="is_admin" value="1"> Administrator?<br>
+</div>
+<div><input type="submit" value="Register"/></div></form>
+<div float:right><a href="login_page.html">Back</a></div>
+</body>
+</html>
