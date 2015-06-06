@@ -45,8 +45,9 @@ if(!$result && !$num_results = mysqli_num_rows($result)){
 <head>
 <title>SERLER Submissions</title>
 </head>
+<script src="sorttable.js"></script>
 <body>
-<table border="1">
+<table border="1" class="sortable">
 	<tr>
 		<th>Paper Name</th>
 		<th>Paper Author</th>
